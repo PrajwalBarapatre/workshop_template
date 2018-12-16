@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head >
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,6 +35,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/demo.css">
     <!-- Resource style -->
     <script src="assets/js/mordernizr.js"></script>
+
+
     
     <style>
 * {box-sizing: border-box}
@@ -69,6 +71,9 @@ body {font-family: "Lato", sans-serif;}
   background-color: #ddd;
 }
 
+.buttn:hover{
+background-color:#e83e8c !important;
+}
 /* Create an active/current "tab button" class */
 .tab button.active {
   background-color: #ccc;
@@ -119,7 +124,9 @@ body {font-family: "Lato", sans-serif;}
   <body>
 
     <!-- Header Area wrapper Starts -->
+
     <header id="header-wrap">
+
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
         <div class="container">
@@ -279,6 +286,45 @@ body {font-family: "Lato", sans-serif;}
       <!-- Main Carousel Section End -->
 
     </header>
+    <header class="site-header" style="display:none">
+
+
+                    <div class="custom-options">
+                        <div class="animation-selector">
+                            <select class="select-animation" id="select-animation">
+                                <!-- <option value="">No Animation</option> -->
+
+                                <!-- <optgroup label="Sliding effects"> -->
+                                    <option value="slideInUp">slideInUp</option>
+
+                                <!-- </optgroup> -->
+
+                            </select>
+                        </div>
+                        <!-- .animation-selector -->
+                        <ul class="button-group style-class-switch">
+                            <li class="active"><a href="#" data-styleclass="right-align">Alternate</a></li>
+                            <!-- <li><a href="#" data-styleclass="alternate">Right</a></li>
+                            <li><a href="#" data-styleclass="left-align">Left</a></li> -->
+                        </ul>
+                        <div class="check-style" style="display:none;visibility:hidden">
+                            <label for="dateToggle">
+                                <input type="checkbox" name="dateToggle" id="dateToggle" checked=""> <span></span> Show Date Opposite </label>
+                        </div>
+
+                    </div>
+                    <!-- .custom-options -->
+                </div>
+                <!-- .container -->
+            </div>
+                    <!-- .style-switch -->
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .header-top -->
+
+            <!-- .header-cutomizations -->
+        </header>
     <!-- Header Area wrapper End -->
 
     <!-- Coundown Section Start -->
@@ -398,48 +444,44 @@ body {font-family: "Lato", sans-serif;}
         <div class="row">
           <div class="col-12">
             <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">COMPETITIONS</h1>
-              <!-- <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor</p> -->
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedules</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor</p>
             </div>
           </div>
         </div>
-        <!-- This where events has to be added--Inderjeet -->
         <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
           <div class="schedule-tab-title col-md-3 col-lg-3 col-xs-12">
             <div class="table-responsive">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color:transparent">
                 <li class="nav-item">
                   <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
                     <div class="item-text">
-                      <h4 style="padding-top: 8% !important;padding-left: 25% !important;">IPL AUCTION</h4>
+                      <h4>Monday</h4>
+                      <h5>14 February</h5>
                     </div>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
                     <div class="item-text">
-                      <h4 style="padding-top: 7.5% !important;padding-left: 16.5% !important;">THE BOARD ROOM</h4>
+                      <h4>Tuesday</h4>
+                      <h5>15 February</h5>
                     </div>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday">
                     <div class="item-text">
-                      <h4 style="padding-top: 7.5% !important;padding-left: 7% !important;">WOLF OF WALL STREET</h4>
+                      <h4>Wednesday</h4>
+                      <h5>16 February</h5>
                     </div>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="thursday">
                     <div class="item-text">
-                      <h4 style="padding-top: 7.5% !important;padding-left: 14% !important;">NATIONAL BIZQUIZ</h4>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="test1-tab" data-toggle="tab" href="#test1" role="tab" aria-controls="test1">
-                    <div class="item-text">
-                      <h4 style="padding-top: 8% !important;padding-left: 25% !important;">TEST 1</h4>
+                      <h4>Thursday</h4>
+                      <h5>17 February</h5>
                     </div>
                   </a>
                 </li>
@@ -450,139 +492,83 @@ body {font-family: "Lato", sans-serif;}
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
                 <div id="accordion">
-                	<div class="container">
-                		<img width="100%" src="assets/img/competitions/IPLAuction.jpg">
-                		<h5 style="padding-top: 1.9%">INTRODUCTION</h5>
-                		<p>Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
-                		</p>
-                		<h5 style="padding-top: 1.8%">FORMAT</h5>
-                		<p><strong>Participate in Teams of 3</strong></p>
-                		<p style="padding-top: 1.8%"><strong>Stage 1: Sports Quiz:</strong><br>The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.</p>
-                		<p style="padding-top: 1.8%"><strong>Stage 2: Bidding Round:</strong></p>
-                		<p>The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!</p>
-                	</div>
-                  <!-- <div class="card">
-                    <div id="headingOne">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt="">
-                        </div>                     
-                        <span class="time">10am - 12:30pm</span>
-                        <h4>Web Design Principles and Best Practices</h4>
-                        <h5 class="name">David Warner</h5>
-                      </div>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimus lites consequuntur innobisl dolores saepe.Proin sit amet turpis lobortis.</p>
-                        <div class="location">
-                          <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                        </div>
-                      </div>
+                  <div class="container">
+                    <img src="IPLAuction.jpg" style="width:100%;margin-bottom:20px;margin-top:20px;">
+                    <div    class="container" style="text-align:left;">
+                      <h5 style="font-weight:bold">INTRODUCTION</h5>
+                      <p style="padding-bottom:10px;">
+                        Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
+                      </p>
+                      <h5 style="font-weight:bold">FORMAT</h5>
+
+                        <p style="font-weight:bold">Participate in Teams of 3</p>
+                      <ul>
+                        <li style="list-style:none">
+                          <p style="font-weight:bold">Stage 1 : Sports Quiz</p>
+                          <p>
+                            The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.
+                          </p>
+                        </li>
+                        <li style="list-style:none">
+                          <p style="font-weight:bold">Stage 2 : Bidding Round</p>
+                          <p>
+                            The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                    <h5 style="font-weight:bold">PRIZES</h5>
+                    <ul style="padding-bottom:20px;">
+                      <li style="list-style:none;">1st Prize worth INR 20,000/-</li>
+                      <li style="list-style:none;">2nd Prize worth INR 15,000/-</li>
+                      <li style="list-style:none;">Skills Learned: Financial Optimisation, Bidding.</li>
+                    </ul>
                     </div>
                   </div>
-                  <div class="card">
-                    <div id="headingTwo">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-2.jpg" alt="">
-                        </div>                     
-                        <span class="time">10am - 12:30pm</span>
-                        <h4>15 Free Productive Design Tools</h4>
-                        <h5 class="name">David Warner</h5>
-                      </div>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimus lites consequuntur innobisl dolores saepe.Proin sit amet turpis lobortis.</p>
-                        <div class="location">
-                          <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                        </div>
-                      </div>
+                  </div>
+              </div>
+               <div class="tab-pane fade " id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                <div id="accordion">
+                  <div class="container">
+                    <img src="IPLAuction.jpg" style="width:100%;margin-bottom:20px;margin-top:20px;">
+                    <div    class="container" style="text-align:left;">
+                      <h5 style="font-weight:bold">INTTTRODUCTION</h5>
+                      <p style="padding-bottom:10px;">
+                        Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
+                      </p>
+                      <h5 style="font-weight:bold">FORMAT</h5>
+
+                        <p style="font-weight:bold">Participate in Teams of 3</p>
+                      <ul>
+                        <li style="list-style:none">
+                          <p style="font-weight:bold">Stage 1 : Sports Quiz</p>
+                          <p>
+                            The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.
+                          </p>
+                        </li>
+                        <li style="list-style:none">
+                          <p style="font-weight:bold">Stage 2 : Bidding Round</p>
+                          <p>
+                            The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!
+
+
+                          </p>
+                        </li>
+                      </ul>
+
+                    <h5 style="font-weight:bold">PRIZES</h5>
+                    <ul style="padding-bottom:20px;">
+                      <li style="list-style:none;">1st Prize worth INR 20,000/-</li>
+                      <li style="list-style:none;">2nd Prize worth INR 15,000/-</li>
+                      <li style="list-style:none;">Skills Learned: Financial Optimisation, Bidding.</li>
+                    </ul>
                     </div>
                   </div>
-                  <div class="card">
-                    <div id="headingThree">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <div class="images-box">
-                          <img class="img-fluid" src="assets/img/speaker/speakers-3.jpg" alt="">
-                        </div>                     
-                        <span class="time">10am - 12:30pm</span>
-                        <h4>Getting Started With SketchApp</h4>
-                        <h5 class="name">David Warner</h5>
-                      </div>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimus lites consequuntur innobisl dolores saepe.Proin sit amet turpis lobortis.</p>
-                        <div class="location">
-                          <span>Location:</span> Hall 1 , Building A, Golden Street, Southafrica
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
+                  </div>
               </div>
-              <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
-                <div id="accordion2">
-                  <div class="container">
-                		<img width="100%" src="assets/img/competitions/IPLAuction.jpg">
-                		<h5 style="padding-top: 1.9%">INTRODUCTION</h5>
-                		<p>Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
-                		</p>
-                		<h5 style="padding-top: 1.8%">FORMAT</h5>
-                		<p><strong>Participate in Teams of 3</strong></p>
-                		<p style="padding-top: 1.8%"><strong>Stage 1: Sports Quiz:</strong><br>The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.</p>
-                		<p style="padding-top: 1.8%"><strong>Stage 2: Bidding Round:</strong></p>
-                		<p>The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!</p>
-                	</div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
-                <div id="accordion3">
-                  <div class="container">
-                		<img width="100%" src="assets/img/competitions/IPLAuction.jpg">
-                		<h5 style="padding-top: 1.9%">INTRODUCTION</h5>
-                		<p>Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
-                		</p>
-                		<h5 style="padding-top: 1.8%">FORMAT</h5>
-                		<p><strong>Participate in Teams of 3</strong></p>
-                		<p style="padding-top: 1.8%"><strong>Stage 1: Sports Quiz:</strong><br>The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.</p>
-                		<p style="padding-top: 1.8%"><strong>Stage 2: Bidding Round:</strong></p>
-                		<p>The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!</p>
-                	</div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
-                <div id="accordion4">
-                  <div class="container">
-                		<img width="100%" src="assets/img/competitions/IPLAuction.jpg">
-                		<h5 style="padding-top: 1.9%">INTRODUCTION</h5>
-                		<p>Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
-                		</p>
-                		<h5 style="padding-top: 1.8%">FORMAT</h5>
-                		<p><strong>Participate in Teams of 3</strong></p>
-                		<p style="padding-top: 1.8%"><strong>Stage 1: Sports Quiz:</strong><br>The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.</p>
-                		<p style="padding-top: 1.8%"><strong>Stage 2: Bidding Round:</strong></p>
-                		<p>The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!</p>
-                	</div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="test1" role="tabpanel" aria-labelledby="test1-tab">
-                <div id="accordion4">
-                  <div class="container">
-                		<img width="100%" src="assets/img/competitions/triathlon.jpg">
-                		<h5 style="padding-top: 1.9%">INTRODUCTION</h5>
-                		<p>Welcome to the thrill of a live auction! Put yourself in the shoes of a bidder to build the dream team that you always wanted in these racy hours of nerves, strategy, game theory and gut.If you love cricket, if you have followed IPL and if you can mix common sense with passion into your bidding strategy, this event is a must for you.
-                		</p>
-                		<h5 style="padding-top: 1.8%">FORMAT</h5>
-                		<p><strong>Participate in Teams of 3</strong></p>
-                		<p style="padding-top: 1.8%"><strong>Stage 1: Sports Quiz:</strong><br>The quiz will contain questions from Sports (mainly from Cricket). It will be an elimination round and top 8 teams will be selected for the final round.</p>
-                		<p style="padding-top: 1.8%"><strong>Stage 2: Bidding Round:</strong></p>
-                		<p>The 8 final teams will compete in a Live auction of players. Each team will be given a fixed budget which will be used for the auction. The aim will be to build a squad that maximizes the total ratings of the players of the team in limited budget along with the constraints on total number of players. If you like taking calculated risks, this competition is for you. Feel the live auction here!!</p>
-                	</div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -848,14 +834,14 @@ body {font-family: "Lato", sans-serif;}
     			<h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Schedule</h1>
     		</div>
       <div class="col-md-12" style="padding: 2.5%;text-align: center;">
-        <button type="button" class="fadeInLeft wow btn btn-common btn-lg" data-wow-delay=".6s" onclick="chng(Event,'Date_1')" >
+        <button type="button" class="fadeInLeft wow btn btn-common btn-lg buttn" id="btn1" data-wow-delay=".6s" onclick="chng(Event,'Date_1','btn1')" >
           <h4 style="margin: 1.5%;">DAY 1</h4>
         </button>
-        <button type="button" class="fadeInLeft wow btn btn-common btn-lg" data-wow-delay=".6s" onclick="chng(Event,'Date_2')" >
+        <button type="button" class="fadeInLeft wow btn btn-common btn-lg buttn" id="btn2" data-wow-delay=".6s" onclick="chng(Event,'Date_2','btn2')" >
           <h4 style="margin: 1.5%;">DAY 2</h4>
         </button>
       </div>
-      
+
 
       <div id="Date_1" class="container date" style="text-align: center;margin-bottom: 20px;" >
       	<div class="frst-container">
@@ -865,9 +851,7 @@ body {font-family: "Lato", sans-serif;}
                     <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
                     <!-- frst-timeline-img -->
                     <div class="frst-timeline-content effect1">
-                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span> <span class="icon-section">
-                                <!-- -->
-                            </span>
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span>
                             <div class="text-section">
                                 <h2>Phase 1 Companies Launch</h2>
                             </div>
@@ -882,7 +866,7 @@ body {font-family: "Lato", sans-serif;}
                     <!-- frst-timeline-img -->
                     <div class="frst-timeline-content effect2">
                         <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
-                               
+
                             </span>
                             <div class="text-section">
                                 <h2>Phase 2 companies Launch</h2>
@@ -914,7 +898,7 @@ body {font-family: "Lato", sans-serif;}
                     <!-- frst-timeline-img -->
                     <div class="frst-timeline-content effect2">
                         <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
-                               
+
                             </span>
                             <div class="text-section">
                                 <h2>Phase 2 companies Launch</h2>
@@ -946,7 +930,7 @@ body {font-family: "Lato", sans-serif;}
                     <!-- frst-timeline-img -->
                     <div class="frst-timeline-content effect2">
                         <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
-                               
+
                             </span>
                             <div class="text-section">
                                 <h2>Phase 2 companies Launch</h2>
@@ -959,18 +943,121 @@ body {font-family: "Lato", sans-serif;}
                 </div>
 
                 <!-- frst-timeline-block -->
-               
+
                 <!-- frst-timeline-block -->
             </div>
             <!-- frst-timeline -->
         </div>
         <!-- .frst-container -->
     </div>
-      </div>	
-      <div id="Date_2" class="container date" style="text-align: center;display: none;margin-bottom: 20px;">
-        
+            <div id="Date_2" class="container date" style="display:none;" >
+      	<div class="frst-container">
+            <!-- frst-left-align/frst-right-align/frst-alternate/frst-date-opposite-->
+            <div class="frst-timeline frst-timeline-style-3 frst-alternate">
+                <div class="frst-timeline-block frst-odd-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect1">
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span>
+                            <div class="text-section">
+                                <h2>Phase 1 Date 2 Companies Launch</h2>
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div class="frst-timeline-block frst-even-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="light-blue"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect2">
+                        <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
+
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 2 companies Launch</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est sit amet augue aliquam vestibulum. Donec tempus erat in gravida dapibus. </p> -->
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <div class="frst-timeline-block frst-odd-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect1">
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span> <span class="icon-section">
+                                <!-- -->
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 1 Companies Launch</h2>
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div class="frst-timeline-block frst-even-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="light-blue"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect2">
+                        <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
+
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 2 companies Launch</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est sit amet augue aliquam vestibulum. Donec tempus erat in gravida dapibus. </p> -->
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <div class="frst-timeline-block frst-odd-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect1">
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span> <span class="icon-section">
+                                <!-- -->
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 1 Companies Launch</h2>
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div class="frst-timeline-block frst-even-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="light-blue"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect2">
+                        <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
+
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 2 companies Launch</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est sit amet augue aliquam vestibulum. Donec tempus erat in gravida dapibus. </p> -->
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+
+                <!-- frst-timeline-block -->
+
+                <!-- frst-timeline-block -->
+            </div>
+            <!-- frst-timeline -->
+        </div>
+        <!-- .frst-container -->
+    </div>
       </div>
-    	</div>
     </section>
 
 
@@ -1600,13 +1687,19 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
- function chng(evt,datE){
+ function chng(evt,datE,Bttn){
         var dates;
         var i;
+        var j;
         dates=document.getElementsByClassName("date");
         for(i=0;i<dates.length;i++){
           dates[i].style.display="none";
         }
+        buttons=document.getElementsByClassName("buttn");
+        for(j=0;j<dates.length;j++){
+          buttons[j].style.backgroundColor="#6674A3";
+        }
+        document.getElementById(Bttn).style.backgroundColor="#e83e8c";
         document.getElementById(datE).style.display="block";
         
       }
